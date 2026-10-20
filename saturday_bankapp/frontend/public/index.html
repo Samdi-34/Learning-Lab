@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Docker Full Stack Test</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 12px 20px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            background: #eee;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Docker Full Stack Test</h1>
+
+    <p>Frontend → Backend → PostgreSQL</p>
+
+    <button onclick="testBackend()">
+        Test Backend
+    </button>
+
+    <button onclick="getUsers()">
+        Get Users
+    </button>
+
+    <div id="result">
+        Waiting for request...
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

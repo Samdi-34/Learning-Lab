@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: saturday-config
+
+data:
+  APP_NAME: saturday
+  APP_ENV: development
+  LOG_LEVEL: info
+ BACKEND_URL: https://api.saturday.com

@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: saturday
+  namespace: development
+
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: saturday
+
+  template:
+    metadatax:
+      labels:
+        app: saturday
+
+    spec:
+      containers:
+        - name: saturday-container
+          image: saturdaysamdi/saturday-demo:1.0
+          ports:
+            
