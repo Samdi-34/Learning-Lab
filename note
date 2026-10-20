@@ -1,0 +1,44 @@
+deployment.yaml
+Defines how Kubernetes runs your application, including which container image to use and how many replicas to maintain.
+
+
+service.yaml
+Gives your application a stable network endpoint so other applications, or sometimes external users, can reach its Pods.
+
+
+configmap.yaml
+Stores non-sensitive configuration, such as application settings or environment-specific values.
+it is the settings file for your application.
+
+
+secret.yaml
+store Kubernetes Secret resources for sensitive data, such as passwords and tokens.
+it is a credential container.
+
+
+namespace.yaml
+Creates a Kubernetes Namespace, which separates resources into logical groups within a cluster.
+it is a workspace or compartment.
+
+
+hpa.yaml
+A Horizontal Pod Autoscaler (HPA), can increase or decrease the number of application Pods based on configured metrics and limits.
+it work as automatic capacity adjustment.
+
+
+ingress.yaml
+Defines rules for routing external HTTP/HTTPS traffic to services inside the cluster.
+it is a web traffic gateway.
+
+
+pod.yaml
+A Pod is the smallest deployable unit in Kubernetes and can contain one or more containers.
+it is a running application unit. 
+
+
+multiplenamespace.yaml
+use to  defines multiple Namespace resources in one file.
+
+
+node_app & saturday_bankapp 
+these are to show my understanding of how cloud concept work and how resource is deployed.
